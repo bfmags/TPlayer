@@ -1,30 +1,35 @@
 <html>
 <head>
-  <title>Buried in a Blizzard</title>
-  <script type="text/javascript" src="//static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
+  <title>Live Search</title>
+  <script type="text/javascript"
+          src="//static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
   <script type="text/javascript">
     bbcRequireMap = {
-      "jquery-1.9":"//static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
-      "swfobject-2":"//static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
-      "bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3"
+      "jquery-1.9": "//static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
+      "swfobject-2": "//static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
+      "bump-3": "//emp.bbci.co.uk/emp/bump-3/bump-3"
     }
-    require({ paths: bbcRequireMap, waitSeconds: 30 });
+    require({paths: bbcRequireMap, waitSeconds: 30});
   </script>
   <link href="player.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-  <div id="searchHeader">
+<div id="container">
+
+  <div id="search">
     <div class="logo"></div>
     <div id="searchBar">
-	<input id="searchBar_input" />
-   </div>
+      <input id="searchBar_input"/>
+    </div>
   </div>
 
-  <div id="container">
+  <div id="videos">
     <div class="main"></div>
     <div class="list"></div>
   </div>
+
+</div>
 
 <script type="text/javascript" src="player.js"></script>
 </body>
