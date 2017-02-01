@@ -1,0 +1,11 @@
+.list {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+}
+
+.main {
+  width: 75%;
+  height: 100%;
+  display: inline-block;
+}
